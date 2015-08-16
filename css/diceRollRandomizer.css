@@ -1,0 +1,87 @@
+body {
+	font-family: Helvetica;
+	color: white;
+	text-align: center;
+	background-color: #4A4A4A;
+}
+
+#diceImg {
+	width: 150px;
+	height: 150px;
+	margin: 5px;
+	background-color: white;
+	border-radius: 15%;
+}
+
+#diceForm {
+	font-size: 18px;
+}
+
+#numDice {
+	color: black;
+	width: 30px;
+	text-align: center;
+}
+
+#numDiceSubmit, #popUpBoxButton {
+	background-color: black;
+}
+
+#diceDisplay {
+	margin-top: 10px;
+}
+
+input:invalid {
+  background-color: yellow;
+}
+
+
+@media only screen and (max-width: 750px) {
+	#diceImg {
+		width: 100px;
+		height: 100px;
+	}
+	
+	h3 {
+		font-size: 18px;
+	}
+	
+	#diceForm {
+		font-size: 14px;
+	}
+	
+}
+
+#popUpBackground{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	background-color: white;
+	opacity: 0.5;
+}
+
+#popUpBox{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	background-color: #707070;
+}
+
+#popUpBoxHeader {
+	text-align: left;
+	margin: 0px;
+	padding: 10px;
+	background-color: #404040;
+}
+
+#popUpBoxMessage {
+	text-align: left;
+	margin: 0px;
+	padding: 10px;
+}
+
+#popUpBoxButton {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}

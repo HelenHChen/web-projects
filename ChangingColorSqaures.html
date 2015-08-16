@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Squares that change colors with mouse-over!</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/ChangingColorSquares.css">
+		<script src="js/jQuery.js"></script>
+	</head>
+	<body unresolved>
+		<div class="container-fluid">
+			<div class="row" id="title">
+				<h1 class="center">Mouse-over these squares to change their colors!</h1>				
+			</div>
+			<div class="row" id="choices">
+				<div class="col-xs-5">
+					<h3>Do you want the squares to be:</h3>
+				</div>
+				<div class="col-xs-7">
+					<form id="choicesForm" action="">
+						<input type="radio" name="color" id="greyShades" value="greyShades">Different shades of grey
+						<input type="radio" name="color" id="multiColor" value="multiColor">Multi-color
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="js/ChangingColorSquares.js"></script>
+	</body>
+</html>

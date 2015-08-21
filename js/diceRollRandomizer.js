@@ -2,7 +2,7 @@ var main = function() {
 	
 	function validDiceCount(userEntry) {
 		userEntry = Number(userEntry);
-		return (!isNaN(userEntry) && userEntry >0 && userEntry <7 && isInteger(userEntry));
+		return (!isNaN(userEntry) && isInteger(userEntry) && userEntry >0 && userEntry <7);
 	}
 	
 	function isInteger(number) {
@@ -11,8 +11,8 @@ var main = function() {
 	
 	function Alert(header, message, buttonLabel) {
 		this.render = function() {
-			var winWidth = window.innerWidth;
-			var winHeight = window.innerHeight;
+			var winWidth = window.outerWidth;
+			var winHeight = window.outerHeight;
 			var medScreen = (winWidth > 750 && winWidth < 900);
 			var smallScreen = (winWidth <= 750);
 			
@@ -87,7 +87,6 @@ var main = function() {
 			var invalidEntry = new Alert("Invalid entry", "Please enter a whole number between 1 and 6.", "OK");
 			invalidEntry.render();
 			window.addEventListener("resize", invalidEntry.render);
-			document.getElementById("popUpBoxButton").onclick = invalidEntry.ok;
 			document.getElementById("popUpBoxButton").onclick = function(){
 				invalidEntry.ok();
 				window.removeEventListener("resize", invalidEntry.render);

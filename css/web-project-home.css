@@ -1,0 +1,42 @@
+body {
+	font-family: Helvetica;
+	background-color: white;
+}
+
+img {
+	margin: 10px 0px;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.right-text {
+	text-align: right;
+}
+
+.project-desc {
+	margin: 10px 0px;
+}
+
+.proj-name {
+	font-size: 24px;
+}
+
+.shaded {
+	background-color: #4A4A4A;
+	color: white;
+}
+
+#github {
+	font-style: italic;
+}
+
+#title-name {
+	font-size: 72px;
+}
+
+#subtitle {
+	color: gray;
+	font-style: italic;
+}

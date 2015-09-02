@@ -64,7 +64,7 @@ var main = function() {
 			for (var i = 1; i <= numDice; i++) {
 				var diceFace = Math.round(Math.random()*5 + 1);
 				var imgNode = document.createElement('img');
-				imgNode.src = "images/dice/dice-#.png".replace("#", diceFace);
+				imgNode.src = "../images/dice/dice-#.png".replace("#", diceFace);
 				imgNode.id = "diceImg";
 				diceDisplay.appendChild(imgNode);
 				var breakNode = document.createElement('br');

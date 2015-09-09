@@ -8,12 +8,6 @@
 	</head>
 	<body unresolved>
 		<div class="container-fluid">
-			<div id="popUpBackground"></div>
-			<div id="popUpBox">
-				<h3 id="popUpBoxHeader"></h3>
-				<p id="popUpBoxMessage"></p>
-				<button id="popUpBoxButton"></button>
-			</div>
 			<div class="row" id="title">
 				<h1>Dice roll simulator</h1>				
 			</div>
@@ -22,7 +16,14 @@
 					<h3>Enter the number of dice you wish to roll (minimum 1, maximum 6):</h3>
 					<form id="diceForm" action="javascript:void(0);">
 						<label for="numDice">Number of dice:</label>
-						<input type="text" id="numDice" value=2 />
+						<select name="selectNumDice" id="numDice">
+							<option value="1">1</option>
+							<option value="2" selected>2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+						</select>
 						<input type="button" id="numDiceSubmit" value="Roll!" />
 					</form>
 				</div>
